@@ -1,0 +1,7 @@
+:root {
+  --button-border-radius: 36px;
+  --button-raise-level: 8px;
+  --button-hover-pressure: 2px;
+  --button-active-pressure: 4px;
+  --button-inclination: 2deg;
+}

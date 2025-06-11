@@ -1,0 +1,206 @@
+/* SIZE */
+.h-100 {
+  height: 100%;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.title-1,
+.title-2,
+.title-3,
+.title-4,
+.title-5 {
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.title-1 {
+  font-size: 4rem;
+}
+.title-2 {
+  font-size: 3.5rem;
+}
+.title-3 {
+  font-size: 3rem;
+}
+.title-4 {
+  font-size: 2.5rem;
+}
+.title-5 {
+  font-size: 2rem;
+}
+
+/* LAYOUT */
+.absolute {
+  position: absolute;
+}
+
+.flex {
+  display: flex;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.justify-content-start {
+  justify-content: flex-start;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.align-content-center {
+  align-items: center;
+}
+
+.justify-content-end {
+  justify-content: flex-end;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+/* VARIANT */
+.btn:before {
+  content: ' ';
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: var(--dark);
+  border-radius: var(--button-border-radius);
+  transition: 0.2s ease-out;
+  transform: translate3d(0, var(--button-raise-level), -1px);
+  z-index: -1;
+}
+
+.btn {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: var(--button-border-radius);
+  border: 1px solid transparent;
+  padding: 0;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: var(--secondary);
+  cursor: pointer;
+  width: fit-content;
+  transition: 0.2s ease-out;
+  transform-style: preserve-3d;
+  transform: translate3d(0, 0, 0);
+}
+
+/* Press-LEFT */
+.btn.btn-press--left:before {
+  transform: translate3d(
+      0,
+      calc(var(--button-raise-level) - var(--button-hover-pressure)),
+      calc(-1 * var(--button-hover-pressure))
+    )
+    skewY(calc(1 * var(--button-inclination)));
+}
+.btn.btn-press--left {
+  transform: translate3d(0, var(--button-hover-pressure), 0)
+    skewY(calc(-1 * var(--button-inclination)));
+}
+
+.btn.btn-press--left:active:before {
+  transform: translate3d(
+      0,
+      calc(var(--button-raise-level) - var(--button-active-pressure)),
+      calc(-1 * var(--button-active-pressure))
+    )
+    skewY(calc(1 * var(--button-inclination)));
+}
+.btn.btn-press--left:active {
+  transform: translate3d(0, var(--button-active-pressure), 0)
+    skewY(calc(-1 * var(--button-inclination)));
+}
+
+/* Press-MIDDLE */
+.btn.btn-press--middle:before {
+  transform: translate3d(
+    0,
+    calc(var(--button-raise-level) - var(--button-hover-pressure)),
+    calc(-1 * var(--button-hover-pressure))
+  );
+}
+.btn.btn-press--middle {
+  transform: translate3d(0, var(--button-hover-pressure), 0);
+}
+.btn.btn-press--middle:active:before {
+  transform: translate3d(
+    0,
+    calc(var(--button-raise-level) - var(--button-active-pressure)),
+    calc(-1 * var(--button-active-pressure))
+  );
+}
+.btn.btn-press--middle:active {
+  transform: translate3d(0, var(--button-active-pressure), 0);
+}
+
+/* Press-RIGHT */
+.btn.btn-press--right:before {
+  transform: translate3d(
+      0,
+      calc(var(--button-raise-level) - var(--button-hover-pressure)),
+      calc(-1 * var(--button-hover-pressure))
+    )
+    skewY(calc(-1 * var(--button-inclination)));
+}
+.btn.btn-press--right {
+  transform: translate3d(0, var(--button-hover-pressure), 0)
+    skewY(calc(1 * var(--button-inclination)));
+}
+
+.btn.btn-press--right:active:before {
+  transform: translate3d(
+      0,
+      calc(var(--button-raise-level) - var(--button-active-pressure)),
+      calc(-1 * var(--button-active-pressure))
+    )
+    skewY(calc(-1 * var(--button-inclination)));
+}
+.btn.btn-press--right:active {
+  transform: translate3d(0, var(--button-active-pressure), 0)
+    skewY(calc(1 * var(--button-inclination)));
+}
+
+/* a.btn {
+  text-decoration: none;
+  font-weight: 500;
+  color: var(--white);
+  padding: 1rem 2rem;
+  border-radius: var(--button-border-radius);
+  border: var(--primary) 1px solid;
+} */
+
+/* .button-slide {
+  margin-top: 15px;
+  text-decoration: none;
+  background: transparent;
+  font-weight: bold;
+  transition: 0.5s;
+}
+
+.button-slide:hover,
+.button-slide:focus {
+  box-shadow: inset 14em 0 0 0 var(--primary);
+  color: var(--secondary);
+} */
+
+::selection {
+  color: var(--dark);
+  background-color: var(--primary);
+}

@@ -1,3 +1,29 @@
+```
+  ___  _           _       ______                      _   _           
+ / _ \| |         (_)      | ___ \                    | | (_)          
+/ /_\ \ | _____  ___ ___   | |_/ /_ _ _ __  _ __   ___| |_ _  ___ _ __ 
+|  _  | |/ _ \ \/ / / __|  |  __/ _` | '_ \| '_ \ / _ \ __| |/ _ \ '__|
+| | | | |  __/>  <| \__ \  | | | (_| | | | | | | |  __/ |_| |  __/ |   
+\_| |_/_|\___/_/\_\_|___/  \_|  \__,_|_| |_|_| |_|\___|\__|_|\___|_|   
+```
+<!-- # Demonstration -->
+
+<!-- Site : https://alexis-pannetier.netlify.app -->
+
+---
+
+# Install
+
+```sh
+yarn install
+```
+
+# Commands
+
+```sh
+yarn dev
+```
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
@@ -24,7 +50,7 @@ export default tseslint.config({
   languageOptions: {
     // other options...
     parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
+      project: ['./tsconfig.app.json'],
       tsconfigRootDir: import.meta.dirname,
     },
   },

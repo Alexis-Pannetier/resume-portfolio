@@ -1,0 +1,22 @@
+:root {
+  --primary: #f3b51b;
+  --secondary: #292a2c;
+  --dark: #18181b;
+  --white: #eeeeee;
+  --shadow-color: rgba(0, 0, 0, 0.3);
+}
+
+.primary {
+  color: var(--primary);
+}
+
+.secondary {
+  color: var(--secondary);
+}
+
+.border-primary-hover {
+  transition: 0.5s ease;
+}
+.border-primary-hover:hover {
+  box-shadow: 0px 0px 20px 0px var(--primary);
+}
