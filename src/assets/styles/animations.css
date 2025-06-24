@@ -1,0 +1,56 @@
+.fadein {
+  animation: fadein 2s ease-in-out;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* CircularCarousel */
+@keyframes rotate {
+  from {
+    rotate: 0deg;
+  }
+
+  to {
+    rotate: 360deg;
+  }
+}
+
+/* CircularCarousel */
+@keyframes rotateCounter {
+  from {
+    rotate: 0deg;
+  }
+
+  to {
+    rotate: -360deg;
+  }
+}
+
+@keyframes dotOn {
+  from {
+    opacity: 0.8;
+    border: 1px solid var(--available);
+  }
+  to {
+    opacity: 0;
+    border: 40px solid var(--available);
+  }
+}
+
+@keyframes dotOff {
+  from {
+    opacity: 0.8;
+    border: 1px solid var(--unavailable);
+  }
+  to {
+    opacity: 0;
+    border: 40px solid var(--unavailable);
+  }
+}

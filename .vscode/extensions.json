@@ -1,0 +1,9 @@
+{
+    "recommendations": [
+        "shardulm94.trailing-spaces",
+        "amatiasq.sort-imports",
+        "formulahendry.auto-rename-tag",
+        "dsznajder.es7-react-js-snippets",
+        "oderwat.indent-rainbow"
+    ]
+}

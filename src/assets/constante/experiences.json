@@ -1,0 +1,86 @@
+[
+  {
+    "title": "Développeur Fullstack",
+    "society": "Onestaff",
+    "place": "Paris",
+    "startDate": "10/2024",
+    "endDate": "03/2025",
+    "date": "2024 - 2025",
+    "description": "",
+    "type": "pro"
+  },
+  {
+    "title": "Développeur Fullstack",
+    "society": "Bouygues Telecom",
+    "place": "Paris",
+    "startDate": "09/2023",
+    "endDate": "09/2024",
+    "date": "2023 - 2024",
+    "description": "",
+    "type": "pro"
+  },
+  {
+    "title": "Développeur Frontend",
+    "society": "Salaun Holidays",
+    "place": "Rennes",
+    "startDate": "11/2022",
+    "endDate": "09/2023",
+    "date": "2022 - 2023",
+    "description": "",
+    "type": "pro"
+  },
+  {
+    "title": "Ingénieur consultant",
+    "society": "Extia",
+    "place": "Rennes",
+    "startDate": "11/2022",
+    "endDate": "",
+    "date": "2022 - ...",
+    "description": "",
+    "type": "pro"
+  },
+  {
+    "title": "Développeur fullstack",
+    "society": "ADB dev",
+    "place": "Rennes",
+    "startDate": "11/2019",
+    "endDate": "07/2022",
+    "date": "2019 - 2022",
+    "description": "",
+    "type": "pro"
+  },
+  {
+    "title": "Master Fullstack",
+    "society": "MyDigitalSchool",
+    "place": "Ker Lann",
+    "startDate": "2019",
+    "endDate": "2022",
+    "date": "2019 - 2022",
+    "description": "Titre RNCP : Concepteur et Développeur d'Application",
+    "type": "school"
+  },
+  {
+    "title": "Développeur mobile",
+    "society": "Mobility Tech Green",
+    "place": "Rennes",
+    "date": "2019",
+    "description": "",
+    "type": "pro"
+  },
+  {
+    "title": "Développeur logiciel",
+    "society": "IMIE",
+    "place": "Ker Lann",
+    "date": "2017 - 2019",
+    "description": "",
+    "type": "school"
+  },
+  {
+    "title": "Développeur Web",
+    "society": "Schoolab",
+    "place": "Paris",
+    "date": "2018",
+    "description": "Développement d'une application web avec gulp",
+    "type": "pro"
+  }
+]
