@@ -1,0 +1,44 @@
+:root {
+  --primary: #f3b51b;
+  --secondary: #292a2c;
+  --background: #242424;
+  --dark: #18181b;
+  --white: #eeeeee;
+  --available: #4caf50;
+  --unavailable: #f3b51b;
+  --shadow-color: rgba(0, 0, 0, 0.5);
+  --lighten-color: rgba(255, 255, 255, 0.3);
+}
+
+.primary {
+  color: var(--primary);
+}
+
+.secondary {
+  color: var(--secondary);
+}
+
+.bg-primary {
+  background-color: var(--primary);
+}
+
+.bg-secondary {
+  background-color: var(--secondary);
+}
+
+.primary-hover {
+  transition: 0.5s ease;
+}
+
+.primary-hover:hover {
+  box-shadow: 0px 0px 20px 10px var(--primary);
+}
+
+.primary-hover {
+  transition: box-shadow 0.5s ease;
+}
+
+.primary-hover:hover {
+  box-shadow: 0px 0px 20px 10px var(--primary);
+  animation-delay: 0.5s;
+}

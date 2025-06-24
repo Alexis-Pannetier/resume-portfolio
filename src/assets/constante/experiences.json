@@ -1,0 +1,136 @@
+[
+  {
+    "id": 10,
+    "title": "Développeur Fullstack",
+    "society": "Lacroix",
+    "place": "Rennes",
+    "projets": 1,
+    "startDate": "2025/04",
+    "endDate": "2025/09",
+    "date": "2025",
+    "duration": {
+      "months": 6
+    },
+    "description": "",
+    "tags": ["pro", "client"]
+  },
+  {
+    "id": 9,
+    "title": "Développeur Fullstack",
+    "society": "Onestaff",
+    "place": "Paris",
+    "projets": 4,
+    "startDate": "2024/10",
+    "endDate": "2025/03",
+    "date": "2024 - 2025",
+    "duration": {
+      "months": 6
+    },
+    "description": "",
+    "tags": ["pro", "client"]
+  },
+  {
+    "id": 8,
+    "title": "Développeur Fullstack",
+    "society": "Bouygues Telecom",
+    "place": "Paris",
+    "projets": 2,
+    "startDate": "2023/09",
+    "endDate": "2024/09",
+    "date": "2023 - 2024",
+    "duration": {
+      "months": 13
+    },
+    "description": "",
+    "tags": ["pro", "client"]
+  },
+  {
+    "id": 7,
+    "title": "Développeur Frontend",
+    "society": "Salaun Holidays",
+    "place": "Rennes",
+    "projets": 2,
+    "startDate": "2022/11",
+    "endDate": "2023/09",
+    "date": "2022 - 2023",
+    "duration": {
+      "months": 11
+    },
+    "description": "",
+    "tags": ["pro", "client"]
+  },
+  {
+    "id": 6,
+    "title": "Ingénieur consultant",
+    "society": "Extia",
+    "place": "Rennes",
+    "startDate": "2022/11",
+    "endDate": "",
+    "date": "2022 - ...",
+    "description": "",
+    "tags": ["pro"]
+  },
+  {
+    "id": 5,
+    "title": "Développeur fullstack",
+    "society": "ADB dev",
+    "place": "Rennes",
+    "projets": 3,
+    "startDate": "2019/11",
+    "endDate": "2022/07",
+    "date": "2019 - 2022",
+    "duration": {
+      "months": 33
+    },
+    "description": "",
+    "tags": ["pro"]
+  },
+  {
+    "id": 4,
+    "title": "Master Fullstack",
+    "society": "MyDigitalSchool",
+    "place": "Ker Lann",
+    "startDate": "2019",
+    "endDate": "2022",
+    "date": "2019 - 2022",
+    "description": "Titre RNCP : Concepteur et Développeur d'Application",
+    "tags": ["school"]
+  },
+  {
+    "id": 3,
+    "title": "Développeur mobile",
+    "society": "Mobility Tech Green",
+    "projets": 1,
+    "place": "Rennes",
+    "date": "2019",
+    "duration": {
+      "months": 5
+    },
+    "description": "",
+    "tags": ["pro"]
+  },
+  {
+    "id": 2,
+    "title": "Développeur logiciel",
+    "society": "IMIE",
+    "place": "Ker Lann",
+    "startDate": "2017",
+    "endDate": "2019",
+    "date": "2017 - 2019",
+    "description": "",
+    "tags": ["school"]
+  },
+  {
+    "id": 1,
+    "title": "Développeur Web",
+    "society": "Schoolab",
+    "place": "Paris",
+    "projets": 2,
+    "date": "2018",
+    "duration": {
+      "months": 4
+    },
+    "description": "Développement d'une application web avec gulp",
+    "tags": ["pro"]
+  }
+]

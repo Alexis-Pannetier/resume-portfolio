@@ -1,0 +1,10 @@
+:root {
+  --button-border-radius: 36px;
+  --button-raise-level: 8px;
+  --button-hover-pressure: 2px;
+  --button-active-pressure: 4px;
+  --button-inclination: 2deg;
+
+  --awesome-switch-height: 32px;
+  --awesome-switch-width: 32px;
+}
