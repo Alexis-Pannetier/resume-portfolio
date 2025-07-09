@@ -1,5 +1,5 @@
-import DotAvailable from './DotAvailable'
-import TextAvailable from './TextAvailable'
+import DotAvailable from './available/DotAvailable'
+import TextAvailable from './available/TextAvailable'
 import avatar from '@assets/images/alexis.jpg'
 
 export default function Avatar() {
