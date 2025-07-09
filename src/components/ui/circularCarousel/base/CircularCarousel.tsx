@@ -21,7 +21,6 @@ export default function CircularCarousel({
   logoRange = 1,
   logoSize = 80,
   size = 320,
-  title,
 }: CircularCarouselProps) {
   const circularCarouselContainerStyle: React.CSSProperties = {
     padding: '14rem 0',

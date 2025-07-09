@@ -5,24 +5,26 @@ import Page from '@components/layouts/Page'
 import StatisticsNumbers from '../ui/statistics/StatisticsNumbers'
 import { useTranslation } from 'react-i18next'
 
+// import ParallaxLanguageAndTools from '../ui/parralax/ParallaxLanguageAndTools'
+
 const MainPage = () => {
   const { t } = useTranslation()
   const name = import.meta.env.VITE_FULLNAME
+  const firstName = name.split(' ')[0]
   const dataSequence = [
-    `${t('i_am')} ${name}`,
+    `${t('i_am')} ${name ?? ''}`,
     `${t('i_am')} ${t('job')}`,
     `${t('i_am')} ${t('job_2')}`,
   ]
-  const firstName = name.split(' ')[0]
 
   return (
     <>
       <Page title={firstName}>
         <Cursor />
         <Hero dataSequence={dataSequence} />
-        {/* <Skills /> */}
         <StatisticsNumbers />
         <CircularCarouselLanguageAndTools />
+        {/* <ParallaxLanguageAndTools /> */}
       </Page>
     </>
   )

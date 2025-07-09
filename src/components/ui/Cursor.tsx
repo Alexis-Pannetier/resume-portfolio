@@ -6,10 +6,10 @@ export default function Cursor() {
       innerSize={8}
       outerSize={8}
       color="243, 181, 27"
-      // color='255, 255, 255'
       outerAlpha={0.2}
       innerScale={0.8}
       outerScale={4}
+      showSystemCursor={true}
       innerStyle={{
         mixBlendMode: 'difference',
       }}
