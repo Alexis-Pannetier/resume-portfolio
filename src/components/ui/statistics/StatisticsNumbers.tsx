@@ -3,8 +3,10 @@ import {
   getTotalDurationExperiences,
   getTotalProjetExperiences,
 } from '@services/experiencesService.ts'
+import { useEffect, useState } from 'react'
 
 import StatisticNumber from './base/StatisticNumber'
+import { isSmall } from '@/src/services/screenSize'
 import { useTranslation } from 'react-i18next'
 
 export default function StatisticsNumbers() {
@@ -19,8 +21,23 @@ export default function StatisticsNumbers() {
     { id: 3, value: projets_experiences, label: t('projects') },
   ]
 
-  const StatisticsNumbersStyle = {
+  const [isSmallScreen, setIsSmallScreen] = useState(isSmall())
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsSmallScreen(isSmall())
+    }
+
+    window.addEventListener('resize', handleResize)
+    return () => {
+      window.removeEventListener('resize', handleResize)
+    }
+  }, [])
+
+  let StatisticsNumbersStyle: React.CSSProperties = {
     margin: '10rem auto',
+    flexDirection: isSmallScreen ? 'row' : 'column',
+    gap: '2rem',
   }
 
   return (
@@ -32,7 +49,7 @@ export default function StatisticsNumbers() {
         <div
           key={stat.id}
           style={{
-            flex: '1',
+            flex: '1 1 100px',
             display: 'flex',
             justifyContent: 'center',
             textAlign: 'center',

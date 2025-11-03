@@ -1,5 +1,5 @@
-import DotAvailable from './DotAvailable'
-import TextAvailable from './TextAvailable'
+import DotAvailable from './available/DotAvailable'
+import TextAvailable from './available/TextAvailable'
 import avatar from '@assets/images/alexis.jpg'
 
 export default function Avatar() {
@@ -21,6 +21,7 @@ export default function Avatar() {
           src={avatar}
           className="primary-hover"
           alt="Photo de profil : Alexis Pannetier"
+          fetchPriority="high"
           style={avatarStyle}
         />
         <DotAvailable active={available} size={size} count={2} />

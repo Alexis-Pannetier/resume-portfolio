@@ -15,9 +15,8 @@ export const Hero = ({ delay = 1500, dataSequence }: HeroProps) => {
     maxWidth: 900,
     minHeight: 800,
     gap: '4rem',
-    height: 100,
     width: '100%',
-    margin: 'auto',
+    margin: '5rem auto',
   }
 
   const sequence = dataSequence.flatMap((text: string) => [text, delay])

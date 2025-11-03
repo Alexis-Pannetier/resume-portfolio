@@ -6,7 +6,7 @@ interface HeaderProps {
 }
 
 export default function Header({
-  title = 'Unamed',
+  title = 'Unnamed',
   height = '80px',
 }: HeaderProps) {
   const headerStyle: React.CSSProperties = {
@@ -24,8 +24,6 @@ export default function Header({
     boxSizing: 'border-box',
     top: 0,
   }
-
-  console.log('This is the way !')
 
   return (
     <div className="w-100" style={headerStyle}>

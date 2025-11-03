@@ -6,7 +6,7 @@ const GITHUB_URL = import.meta.env.VITE_GITHUB_URL
 export default function GithubButton() {
   return (
     <AwesomeButton href={GITHUB_URL} target="_blank">
-      <img src={GithubImg}></img>
+      <img src={GithubImg} alt="Github logo" aria-label="Github logo" />
     </AwesomeButton>
   )
 }

@@ -1,4 +1,4 @@
-import experiencesData from '@assets/constante/experiences.json'
+import experiencesData from '@assets/constant/experiences.json'
 
 export type Duration = {
   months: number

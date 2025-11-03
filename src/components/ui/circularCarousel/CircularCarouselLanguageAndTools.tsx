@@ -1,11 +1,16 @@
+import { isLarge, isMedium, isSmall } from '@/src/services/screenSize'
+import { useEffect, useState } from 'react'
+
 import CircularCarousel from './base/CircularCarousel'
 import angularLogo from '@assets/images/brand/angular.svg'
+import ansibleLogo from '@assets/images/brand/ansible.svg'
 import cssLogo from '@assets/images/brand/css.svg'
 import dockerLogo from '@assets/images/brand/docker.svg'
 import figmaLogo from '@assets/images/brand/figma.svg'
 import gitLogo from '@assets/images/brand/git.svg'
 import htmlLogo from '@assets/images/brand/html.svg'
 import jsLogo from '@assets/images/brand/javascript.svg'
+import kubernetesLogo from '@assets/images/brand/kubernetes.svg'
 import laravelLogo from '@assets/images/brand/laravel.svg'
 import mysqlLogo from '@assets/images/brand/mysql.svg'
 import phpLogo from '@assets/images/brand/php.svg'
@@ -27,6 +32,18 @@ interface brandLogo {
   size?: number
 }
 
+function setCircularCaroussel() {
+  if (isLarge()) {
+    return { logoSize: 80, size: 340 }
+  } else if (isMedium()) {
+    return { logoSize: 70, size: 280 }
+  } else if (isSmall()) {
+    return { logoSize: 60, size: 220 }
+  } else {
+    return { logoSize: 50, size: 160 }
+  }
+}
+
 export default function CircularCarouselLanguageAndTools({}: CircularCarouselLanguageAndToolsProps) {
   const { t } = useTranslation()
   const languageAndToolLogos: brandLogo[] = [
@@ -40,6 +57,8 @@ export default function CircularCarouselLanguageAndTools({}: CircularCarouselLan
     { name: 'React', src: reactLogo },
     { name: 'Angular', src: angularLogo },
     { name: 'Docker', src: dockerLogo },
+    { name: 'Kubernetes', src: kubernetesLogo },
+    { name: 'Ansible', src: ansibleLogo },
     { name: 'Mysql', src: mysqlLogo },
     { name: 'Postgresql', src: postgresqlLogo },
     { name: 'Git', src: gitLogo },
@@ -50,6 +69,17 @@ export default function CircularCarouselLanguageAndTools({}: CircularCarouselLan
     { name: 'Shopify', src: shopifyLogo },
   ]
 
+  const [config, setConfig] = useState(setCircularCaroussel())
+
+  useEffect(() => {
+    const handleResize = () => {
+      setConfig(setCircularCaroussel())
+    }
+
+    window.addEventListener('resize', handleResize)
+    return () => window.removeEventListener('resize', handleResize)
+  }, [])
+
   return (
     <div
       id="circular-carousel-languages-and-tools"
@@ -57,6 +87,7 @@ export default function CircularCarouselLanguageAndTools({}: CircularCarouselLan
     >
       <CircularCarousel
         logos={languageAndToolLogos}
+        {...config}
         title={t('languages_and_tools')}
       />
     </div>
