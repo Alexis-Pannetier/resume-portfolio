@@ -7,7 +7,7 @@
 \_| |_/_|\___/_/\_\_|___/  \_|  \__,_|_| |_|_| |_|\___|\__|_|\___|_|
 ```
 
-# Live
+# Live [![Netlify Status](https://api.netlify.com/api/v1/badges/9607099c-9016-4c5a-954a-82b4e82233d2/deploy-status)](https://app.netlify.com/projects/alexis-pannetier/deploys)
 
 URL : https://alexis-pannetier.netlify.app
 

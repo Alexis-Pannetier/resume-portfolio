@@ -5,6 +5,7 @@ interface AwesomeButtonProps {
   children?: React.ReactNode
   target?: string
   href?: string
+  onClick?: () => void
 }
 
 enum pressType {
